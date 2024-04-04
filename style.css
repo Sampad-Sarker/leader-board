@@ -1,0 +1,175 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ width: 70%;
+ padding: 0;
+ margin: 0 auto;
+ text-align: center;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+}
+
+h1 {
+ text-transform: capitalize;
+ font-weight: 500;
+}
+
+.input-group {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ align-items: center;
+ gap: 0.25rem;
+}
+
+/* .inline-group {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 5px;
+} */
+
+input,
+button {
+ text-transform: capitalize;
+ padding: 1rem 0.5rem;
+ /* border: none; */
+}
+
+::placeholder {
+ /* text-align: center; */
+ opacity: 0.5;
+}
+
+input:focus {
+ border: none;
+ border: 5px solid #e5c9c5;
+}
+
+button {
+ cursor: pointer;
+ padding-inline: 2rem;
+ color: #fff;
+ text-transform: uppercase;
+ font-weight: 700;
+ background-color: #e5c9c5;
+ border: 2px solid #e5c9c5;
+}
+
+button#sorting {
+ width: 3rem;
+ height: 3rem;
+ border-radius: 50%;
+ padding: 0.5rem;
+
+ cursor: pointer;
+ /* border: none; */
+ background-color: #fff;
+}
+
+button:hover,
+button#sorting:hover {
+ transform: scale(1.1, 1.1);
+}
+#redMessage {
+ color: red;
+ font-weight: 900;
+ /* word-spacing: 1rem; */
+}
+
+.devs {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ gap: 1rem;
+
+ text-transform: uppercase;
+ font-weight: 600;
+}
+.dev {
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ /* gap:0.5rem */
+ background-color: #e5c9c5;
+ /* font-weight: 500; */
+}
+
+.dev > * {
+ /* padding: 1rem; */
+ text-transform: uppercase;
+ /* width: 25%; */
+ flex: 0 0 140px;
+}
+
+.name-date {
+ display: flex;
+ flex-direction: column;
+ margin: auto 0;
+}
+#name,
+#dateTime {
+ text-align: start;
+}
+
+#dateTime {
+ font-size: x-small;
+ color: gray;
+ margin-top: -1rem;
+}
+
+.country,
+.score,
+.icon-group {
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ gap: 1rem;
+}
+
+.icon-group {
+ justify-content: center;
+}
+.icon-group > * {
+ width: 3rem;
+ height: 3rem;
+ border-radius: 50%;
+
+ background-color: #fff;
+ /* border: 1px solid gray; */
+ border: none;
+
+ /* font-weight: 900; */
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.delete img {
+ max-width: 50%;
+}
+
+.icon-group > *:hover {
+ cursor: pointer;
+ transform: scale(1.1, 1.1);
+}
+
+.delete:hover {
+ background-color: #ff080030;
+}
+.add5:hover {
+ background-color: #15ff0030;
+}
+.minus5:hover {
+ background-color: #ff980033;
+}
+
+.anime {
+ display: inline-block;
+}
